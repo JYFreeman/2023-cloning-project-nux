@@ -1,0 +1,20 @@
+/* font - google.com */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Barlow:wght@100;200;300;400;500;600;700;800&family=Dancing+Script:wght@400;700&family=Edu+NSW+ACT+Foundation:wght@400;500;600&family=Noto+Sans+KR:wght@100;200;600&family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;500&family=Playpen+Sans:wght@100;200;400&display=swap');
+
+@import "reset.css";
+@import "variables.css";
+
+/* components */
+@import "components/navigation-bar.css";
+
+/* pages */
+@import "pages/home.css";
+
+
+body {
+  font-family: sans-serif;
+}
+
+.main-screen {
+
+}
