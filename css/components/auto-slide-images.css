@@ -1,0 +1,65 @@
+[name="slide"] {
+  display: none;
+}
+
+
+.slide-box {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide-box img {
+  max-width: 100%;
+}
+
+.slide-box .slide-list {
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.slide-box .slide-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all .35s;
+}
+
+@keyframes slide01 {
+  0% {left: 0%;}
+  15% {left: 0%}
+  17% {left: -100%}
+  32% {left: -100%}
+  34% {left: -200%}
+  49% {left: -200%}  
+  51% {left: -300%}
+  66% {left: -300%}
+  68% {left: -400%}
+  83% {left: -400%}
+  85% {left: -500%}
+  98% {left: -500%}
+  100% {left: 0%}
+}
+
+[id="slide01"]:checked ~ .slide-list .slide-item {
+  transform: translateX(0);
+  animation: slide01 20s infinite;
+}
+[id="slide02"]:checked ~ .slide-list .slide-item {
+  transform: translateX(-100%);
+}
+[id="slide03"]:checked ~ .slide-list .slide-item {
+  transform: translateX(-200%);
+}
+[id="slide04"]:checked ~ .slide-list .slide-item {
+  transform: translateX(-300%);
+}
+[id="slide05"]:checked ~ .slide-list .slide-item {
+  transform: translateX(-400%);
+}
+[id="slide06"]:checked ~ .slide-list .slide-item {
+  transform: translateX(-500%);
+}
+

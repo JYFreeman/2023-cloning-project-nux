@@ -1,6 +1,9 @@
 .nav-box {
   display: flex;
   justify-content: center;
+  background-color: white;
+  padding: 15px 0px;
+  
 }
 
 .nav-box:nth-child(1),
@@ -25,15 +28,20 @@
 
 .item-1 a {
   margin: 0px 25px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 100;
 }
+
 
 .item-1 a:hover {
   border-bottom: 1px solid black;
+  cursor: pointer;
 }
 
 
 .menu-box {
   display: flex;
 }
+
+/* [name="slide"] {display: none;} */
 
